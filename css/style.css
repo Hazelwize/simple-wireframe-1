@@ -1,0 +1,322 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html{
+  font-size: 62.5%;
+}
+body {
+  font: 300 1.6rem 'Titillium Web', sans-serif;
+  background: #F8F9FB;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+main{
+  height: 735px;
+  background: linear-gradient(354deg,#F8F9FB 30%, #1E2635 0%, #171e29 60%,#161C2A 100%);
+  
+}
+
+header {
+ 
+} 
+
+nav{
+  padding: 15px 80px;
+  width: 100%;
+  height: 200px;
+  float: left;
+ 
+}
+nav img{
+  float: left;
+  margin: 30px 0 0 20px;
+
+}
+.navList{
+  width: 60%;
+  margin-left: 40%;
+  margin-bottom: 150px;
+ 
+}
+.navList > li{
+  padding: 4%;
+  float: left;  
+}
+.navList>li a{
+  color:#8D9099;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+.navList .signUp{
+  background: #3C424F;
+  border-radius: 4px;
+  padding: 12px 40px;
+  margin-top: 20px;
+  
+}
+.navList .signUp a{
+  color: white;
+  display: inline-block;
+  
+}
+.grid-1{
+  float: left;
+  width: 50%;
+  height: 400px;
+  color: white;
+}
+.box-1{
+  padding: 1% 2% 0 6%;
+}
+h1{
+  width: 68%;
+  
+  font-size: 3.5rem;
+  margin-bottom: 1%;
+}
+.box-1 p{
+  font-size: 1.85rem;
+  width: 80%;
+  line-height: 3rem;
+  color: rgba(255,255,255,.6);
+}
+
+.box-1 > .grid-1-menu > li{
+  display: inline-block;
+  padding: 7% 7% 7% 0; 
+  margin-top: 5%;
+}
+.box-1 .grid-1-menu li a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.box-1 .grid-1-menu li a.order{
+  padding: 15px 50px;
+  background: white;
+  color: #1C2332;
+  border-radius: 5px;
+}
+/* ==========================================
+iPad 
+========================================== */
+
+.cssiPad{
+  
+  width: 42%;
+  background: #DEE0E9;
+  border-top: 16px solid white;
+  border-bottom: 16px solid white;
+  border-left: 50px solid white;
+  border-right: 50px solid white;
+  border-radius: 25px;
+  box-shadow: 10px 10px 10px rgba(0,0,0,.2), -100px -100px 1000px rgba(255,255,255,.1);
+}
+.cssiPad img{
+  position: relative;
+  top: 33%;
+  left: 34%;
+}
+
+.grid-2{
+  height: 150px;
+}
+.grid-2 > img{
+  float: right;
+  margin-right: 8%;
+}
+.grid-3-1{
+  padding: 90px;
+}
+
+.grid-3-1 h2{
+  font-size: 3.2rem;
+  font-weight: 400;
+  margin: 5px 0 10px 0;
+}
+.grid-3-1>p{
+  color: rgba(0,0,0,.5);
+  font-size: 1.8rem;
+  line-height: 3rem;
+}
+
+.grid-3-box{
+  width: 50%;
+  height: 650px;
+  float: left;
+  margin-bottom: 150px;
+  
+}
+p.preHeader{
+  font-weight: bold;
+  color: rgba(0,0,0,.5);
+  font-size: 1.5rem;
+}
+.grid-3-1 .order{
+  text-decoration: none;
+  padding: 15px 50px;
+  background: #1C2332;
+  color: white;
+  border-radius: 5px;
+  display:inline-block;
+  margin-top: 100px;
+}
+
+.imgGrid{
+  height: 295px;
+  width: 35%;
+  float: left;
+  text-align: center;
+  margin: 4%;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px rgba(0,0,0,.2); 
+}
+.imgGrid h5{
+  font-size: 1.5rem;
+  font-weight: 700;
+  width: 100%;
+  text-align: center;
+ 
+}
+.imgGrid p {
+  color: rgba(0,0,0,.4);
+  width: 100%;
+  padding: 0 5px 0 5px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.grid-4{
+  padding: 80px;
+  height: 800px; 
+  
+}
+.gridBox4{
+  float: left;
+  width: 50%;
+  padding-left: 60px;
+  
+}
+.grid-4-img-box{
+  border-radius: 6px;
+  background: #DDDFE9;
+  height: 500px;
+  width: 40%;
+}
+.grid-4-img-box img{
+  position: relative;
+  top: 38%;
+  left: 26%;
+}
+.gridBox4 h4{
+  font-size: 3.2rem;
+  font-weight: 400;
+  margin: 5px 0 10px 0;
+  width: 70%;
+}
+.gridBox4>p{
+  color: rgba(0,0,0,.5);
+  font-size: 1.8rem;
+  line-height: 3rem;
+
+}
+.gridBox4 .order{
+  text-decoration: none;
+  padding: 15px 50px;
+  background: #1C2332;
+  color: white;
+  border-radius: 5px;
+  display:inline-block;
+  margin-top: 100px;
+}
+.grid-4-2{
+  padding-left: 140px;
+}
+
+ 
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+@media(min-width: 1440px) and (max-width: 10000px){
+  .cssiPad{
+    max-width: 650px;
+    
+  }
+}
